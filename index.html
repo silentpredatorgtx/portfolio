@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Константин - QA / Веб-специалист</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 15px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 25px;
+            background-color: #1e1e1e;
+            border-radius: 12px;
+            box-shadow: 0 0 25px rgba(255, 140, 0, 0.15);
+            border-top: 4px solid #ff8c00;
+        }
+        h1 {
+            color: #ff8c00;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            text-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
+        }
+        h2 {
+            color: #ff8c00;
+            border-bottom: 1px solid #333;
+            padding-bottom: 8px;
+            margin-top: 32px;
+            font-size: 1.3em;
+        }
+        p, li {
+            color: #d1d1d1;
+            font-size: 1.05em;
+        }
+        .contact-info {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1em;
+        }
+        .contact-info span {
+            margin: 4px 10px;
+            color: #ff8c00;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .skills-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skills-list li {
+            background-color: #2a2a2a;
+            padding: 8px 16px;
+            border-radius: 25px;
+            border: 1px solid #ff8c00;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
+        }
+        .skills-list li:hover {
+            background-color: #ff8c00;
+            color: #121212;
+            box-shadow: 0 0 10px rgba(255, 140, 0, 0.5);
+            cursor: default;
+        }
+        .qualities-list {
+            list-style-type: square;
+            padding-left: 20px;
+            color: #ff8c00;
+        }
+        .qualities-list li {
+            margin-bottom: 10px;
+        }
+        .qualities-list span {
+            color: #d1d1d1;
+        }
+        .highlight {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        /* Стили для практических кейсов */
+        details {
+            background-color: #252525;
+            border: 1px solid #383838;
+            border-left: 4px solid #ff8c00;
+            border-radius: 8px;
+            margin-bottom: 14px;
+            padding: 14px 18px;
+            transition: all 0.25s ease;
+        }
+        details[open] {
+            background-color: #2a2a2a;
+            border-color: #ff8c00;
+            box-shadow: 0 0 15px rgba(255, 140, 0, 0.12);
+        }
+        summary {
+            font-weight: bold;
+            color: #ffffff;
+            cursor: pointer;
+            font-size: 1.05em;
+            outline: none;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        summary::-webkit-details-marker {
+            display: none;
+        }
+        summary::after {
+            content: "▼";
+            color: #ff8c00;
+            font-size: 0.8em;
+            transition: transform 0.25s ease;
+            margin-left: 10px;
+        }
+        details[open] summary::after {
+            transform: rotate(180deg);
+        }
+        .case-body {
+            margin-top: 14px;
+            padding-top: 12px;
+            border-top: 1px solid #3a3a3a;
+            font-size: 0.95em;
+            color: #cccccc;
+        }
+        .case-badge {
+            display: inline-block;
+            background-color: rgba(255, 140, 0, 0.15);
+            color: #ff8c00;
+            border: 1px solid #ff8c00;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            margin-right: 6px;
+            margin-bottom: 8px;
+        }
+        .code-snippet {
+            background-color: #161616;
+            padding: 12px;
+            border-radius: 6px;
+            font-family: Consolas, monospace;
+            font-size: 0.9em;
+            color: #e0e0e0;
+            margin-top: 8px;
+            border: 1px solid #333;
+            overflow-x: auto;
+        }
+        .cta-block {
+            text-align: center;
+            margin-top: 35px;
+            padding-top: 25px;
+            border-top: 1px solid #333;
+        }
+        .tg-button {
+            display: inline-block;
+            background-color: #ff8c00;
+            color: #121212;
+            font-weight: bold;
+            font-size: 1.05em;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 30px;
+            box-shadow: 0 0 15px rgba(255, 140, 0, 0.4);
+            transition: all 0.3s ease;
+        }
+        .tg-button:hover {
+            background-color: #ffa533;
+            box-shadow: 0 0 25px rgba(255, 140, 0, 0.8);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Константин</h1>
+        <div class="contact-info">
+            <span>📍 Санкт-Петербург</span> | 
+            <span>💻 QA Engineer / Веб-специалист</span> | 
+            <span>🌐 Удаленный формат</span>
+        </div>
+
+        <h2>Обо мне</h2>
+        <p>Практик с хорошей технической базой. Ищу удаленную работу в тестировании (QA), создании сайтов или технической поддержке. Люблю разбираться, как устроены веб-сервисы изнутри, контролировать качество их работы и находить технические неточности. Быстро осваиваю новые инструменты, четко следую техническому заданию и конструктивно взаимодействую с командой.</p>
+
+        <h2>Практические кейсы и примеры работ</h2>
+
+        <details>
+            <summary>🔍 Кейс 1: Локализация бага формы заявки (Bug Report + DevTools)</summary>
+            <div class="case-body">
+                <span class="case-badge">Manual QA</span>
+                <span class="case-badge">Chrome DevTools</span>
+                <span class="case-badge">Bug Report</span>
+                <p><b>Задача:</b> Проверить форму обратной связи и валидацию полей на адаптивной версии сайта.</p>
+                <div class="code-snippet">
+                    <b>ID:</b> BUG-104 | <b>Серьезность (Severity):</b> Major | <b>Приоритет:</b> High<br>
+                    <b>Окружение:</b> iOS 17 / Mobile Chrome, разрешение 390×844<br><br>
+                    <b>Шаги воспроизведения (Steps to Reproduce):</b><br>
+                    1. Открыть страницу контактов на мобильном устройстве.<br>
+                    2. Ввести корректное имя и номер телефона.<br>
+                    3. Нажать кнопку «Отправить заявку».<br><br>
+                    <b>Ожидаемый результат:</b> Заявка отправляется (HTTP 200 OK), появляется уведомление об успехе.<br>
+                    <b>Фактический результат:</b> Кнопка зависает в состоянии загрузки. В консоли DevTools (вкладка Network) фиксируется ошибка <b>400 Bad Request</b> из-за некорректной маски телефона (передаются скобки и пробелы в JSON-запросе).
+                </div>
+            </div>
+        </details>
+
+        <details>
+            <summary>📋 Кейс 2: Чек-лист кроссбраузерного аудита и верстки</summary>
+            <div class="case-body">
+                <span class="case-badge">HTML / CSS</span>
+                <span class="case-badge">UI / UX</span>
+                <span class="case-badge">Чек-лист</span>
+                <p><b>Задача:</b> Разработка и комплексная проверка веб-страницы перед публикацией.</p>
+                <div class="code-snippet">
+                    [✓] <b>Адаптивность (Responsive Design):</b> проверка сетки на 320px, 768px, 1440px (отсутствие горизонтального скролла).<br>
+                    [✓] <b>Интерактивные элементы:</b> проверка состояний кнопок (hover, active) и корректности переходов по внешним ссылкам.<br>
+                    [✓] <b>Безопасность ссылок:</b> использование атрибутов <i>rel="noopener noreferrer"</i> для защиты целевых вкладок.<br>
+                    [✓] <b>Производительность и чистота кода:</b> валидация семантики HTML5, отсутствие ошибок в Console.
+                </div>
+            </div>
+        </details>
+
+        <details>
+            <summary>🖧 Кейс 3: Развертывание VPS и диагностика сетевой маршрутизации</summary>
+            <div class="case-body">
+                <span class="case-badge">Linux VPS</span>
+                <span class="case-badge">DNS / Сети</span>
+                <span class="case-badge">L2 Support</span>
+                <p><b>Задача:</b> Настройка удаленного виртуального сервера и устранение сбоев сетевого соединения.</p>
+                <div class="code-snippet">
+                    • <b>Администрирование:</b> Подключение к Linux-серверу по SSH, базовая настройка фаервола и сетевых интерфейсов.<br>
+                    • <b>Маршрутизация и DNS:</b> Настройка защищенного DNS (DoH), проверка прохождения пакетов, анализ задержек (ping / traceroute) и разрешение конфликтов портов.<br>
+                    • <b>Результат:</b> Обеспечена бесперебойная связь клиентских устройств (Windows / iOS) с сервером и составлена пошаговая инструкция по подключению.
+                </div>
+            </div>
+        </details>
+
+        <h2>Личные качества</h2>
+        <ul class="qualities-list">
+            <li><span><b>Аналитический подход:</b> оцениваю продукт комплексно — проверяю корректность работы элементов, логику интерфейса и удобство для конечного пользователя.</span></li>
+            <li><span><b>Системность:</b> проверяю функционал последовательно и структурно фиксирую результаты, чтобы у разработчиков была вся информация для быстрого исправления.</span></li>
+            <li><span><b>Высокая самоорганизация:</b> умею эффективно распределять рабочее время, соблюдать дедлайны и стабильно выдавать результат в удаленном формате.</span></li>
+            <li><span><b>Техническая смекалка:</b> уверенно ориентируюсь в незнакомых настройках и логах — знаю, как локализовать проблему и найти решение.</span></li>
+        </ul>
+
+        <h2>Технические навыки</h2>
+        <ul class="skills-list">
+            <li>Ручное тестирование (Manual QA)</li>
+            <li>Анализ требований и документации</li>
+            <li>Chrome DevTools (Network, Console)</li>
+            <li>Понимание клиент-серверной архитектуры</li>
+            <li>Администрирование серверов (VPS)</li>
+            <li>Основы маршрутизации и сетей</li>
+            <li>Написание инструкций и чек-листов</li>
+            <li>Базовая верстка (HTML / CSS)</li>
+        </ul>
+
+        <h2>Профессиональный фокус</h2>
+        <p>Ориентирован на задачи, требующие <span class="highlight">точности и системного подхода</span>. Моя сильная сторона — аудит готовых решений, выявление логических несоответствий и проверка веб-интерфейсов. Готов к вдумчивому тестированию сайтов, работе с технической документацией и четкой систематизации найденных ошибок.</p>
+
+        <div class="cta-block">
+            <a href="https://t.me/carpe_momentVm" target="_blank" rel="noopener noreferrer" class="tg-button">✈️ Написать в Telegram</a>
+        </div>
+    </div>
+</body>
+</html>
